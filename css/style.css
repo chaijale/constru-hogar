@@ -1,0 +1,315 @@
+ /* ESTRATEGIA UTILIZADA FIRST-MOBILE
+ MEDIDAS: 425PX
+          768PX 
+          1024PX */
+
+ /*importar la fuente que se utilizo para el proyecto */
+ @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+ @import url("https://fonts.googleapis.com/css2? family= Inconsolata:wght@200 & display=swap");
+
+ /* Reseteo */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Configuracion de la imagen del icono */
+ header img {
+     width: 80px;
+     height: 60px;
+     border-radius: 50%;
+ }
+
+ /* Fijacion del header para que acompañe en toda la pagina */
+ .fijar {
+     background-color: #46494cf3;
+ }
+
+ /* Configuracion del header para que acompañe el tamaño de la pantalla */
+ .conf-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     flex-direction: column;
+ }
+
+ /* Configuracion de la lista del header para que acompañe el tamaño de la pantalla*/
+ .conf-nav {
+     display: flex;
+     justify-content: space-evenly;
+     list-style: none;
+     font-size: 15px;
+     background-color: #c5c3c6;
+     list-style-type: none;
+     flex-wrap: wrap;
+     align-content: center;
+     align-items: center;
+ }
+
+ /* Configuracion de los elementos de la lista del navegador */
+ header div ul li {
+     margin: 0 10px;
+     display: inline;
+     font-size: 15px;
+ }
+
+ /* Logo de whatsapp para que quede fijo en la pantalla */
+ .wapp {
+     position: fixed;
+     width: 40px;
+     height: 25px;
+     bottom: 5px;
+     left: 5%;
+     border-radius: 100%;
+ }
+
+ /* Configuracion de todos los links */
+ a {
+     text-decoration: none;
+     text-align: center;
+     color: #1985a1;
+     font-family: "Oswald", sans-serif;
+     letter-spacing: 0px;
+ }
+
+ /* centrar imagenes de los banners */
+ .img-center {
+     display: block;
+     margin: 0px auto;
+     height: 250px;
+     width: 100%;
+ }
+
+ /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
+ .galeria {
+     display: grid;
+     align-items: center;
+     justify-items: center;
+ }
+
+ /* Acomodar las imagenes y titulos de la galeria */
+ .cuadrilla-imagenes {
+     border-bottom: 3px black solid;
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+     margin: 8px;
+     text-align: center;
+     font-size: 12px;
+     overflow: hidden;
+     background-color: white;
+ }
+
+ /* Configuracion de los elementos del footer */
+ .class-footer {
+    display: grid;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    justify-items: center;
+ }
+
+ .fondo-footer{
+    background-color: #4c5c68;
+ }
+
+ /* Mofiicacion de la fuente de los elementos "p" */
+ p {
+     font-family: "Inconsolata", monoespaciado;
+     font-size: 14px;
+     text-align: center;
+ }
+
+ /* Configuracion del color de fondo de todas las imagenes */
+ main {
+     background-color: #dcdcdd;
+ }
+
+ /* Configuracion del formulario de contacto en la pagina contacto.html */
+ .form-conf {
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ /* Configuracion de los titulos de cada pagina */
+ .titulos {
+     display: block;
+     text-align: center;
+     background-color: #4c5c68;
+     font-family: "Oswald", sans-serif;
+     font-size: 20px;
+     text-shadow: 3px 2px #1985a1;
+ }
+
+ .nombre {
+     display: none;
+ }
+
+
+
+ /* Estrategia utilizada mobile first */
+ @media (min-width: 768px) {
+
+     header img {
+         width: 120px;
+         height: 100px;
+     }
+
+
+     .conf-header {
+         display: grid;
+         grid-template-columns: 1fr 4fr;
+     }
+
+     header div ul li {
+         margin: 0 8px;
+         font-size: 16px;
+     }
+
+     .wapp {
+         width: 55px;
+         height: 40px;
+     }
+
+     a {
+         font-size: 20px;
+     }
+
+     .img-center {
+         height: 400px;
+     }
+
+     .galeria {
+         display: grid;
+         grid-template-columns: repeat(2, 50vh);
+         justify-content: space-around;
+     }
+
+     .cuadrilla-imagenes {
+         border: 3px black solid;
+     }
+
+     .class-footer {
+         display: grid;
+         font-size: 15px;
+     }
+
+     p {
+         font-size: 16px;
+     }
+
+     .titulos {
+         font-size: 25px;
+
+     }
+ }
+
+ @media (min-width: 1024px) {
+     
+    .fijar {
+         position: sticky;
+         top: 0%;
+         z-index: 101;
+     }
+
+
+     /* Configuracion de la imagen del icono */
+     header img {
+         width: 150px;
+         height: 130px;
+     }
+
+
+     /* Configuracion del header para que acompañe el tamaño de la pantalla */
+     .conf-header {
+         display: flex;
+         justify-content: flex-start;
+         flex-direction: row;
+         align-items: flex-end;
+     }
+
+     /* Configuracion de la lista del header para que acompañe el tamaño de la pantalla*/
+     .conf-nav {
+         padding: 7px;
+
+     }
+
+     /* Configuracion de los elementos de la lista del navegador */
+     header div ul li {
+         margin: 3px 38px;
+     }
+
+     /* Logo de whatsapp para que quede fijo en la pantalla */
+     .wapp {
+         width: 70px;
+         height: 40px;
+         bottom: 36px;
+     }
+
+     /* Configuracion de todos los links */
+     a {
+         font-size: 20px;
+     }
+
+     /* centrar imagenes de los banners */
+     .img-center {
+         display: block;
+         margin: 0px auto;
+         height: 400px;
+     }
+
+     /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
+     .galeria {
+         display: grid;
+         grid-template-columns: repeat(4, 40vh);
+         justify-content: center;
+     }
+
+     /* Acomodar las imagenes y titulos de la galeria */
+     .cuadrilla-imagenes {
+         width: 100%;
+         height: 100%;
+         border: 3px black solid;
+     }
+
+     /* Configuracion de los elementos del footer */
+     .class-footer {
+         display: grid;
+         justify-content: space-evenly;
+         align-content: center;
+         font-family: "Oswald", sans-serif;
+         font-size: 16px;
+         background-color: #4c5c68;
+     }
+
+     /* Mofiicacion de la fuente de los elementos "p" */
+     p {
+         font-size: 18px;
+         
+     }
+
+     /* Configuracion de los titulos de cada pagina */
+     .titulos {
+         font-size: 35px;
+     }
+
+     .nombre {
+         display: block;
+         position: relative;
+         top: -45px;
+         margin-left: 250px;
+         font-size: 40px;
+         color: #1985A1;
+         font-family: 'Oswald', sans-serif;
+         letter-spacing: 7px;
+         text-shadow: 5px 5px 5px black;
+     }
+
+
+
+ }
