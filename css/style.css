@@ -23,7 +23,7 @@
 
  /* Fijacion del header para que acompañe en toda la pagina */
  .fijar {
-    background-image: linear-gradient(45deg,#46494cd5 75%, #6e7277f3);
+     background-image: linear-gradient(45deg, #46494cd5 75%, #6e7277f3);
  }
 
  /* Configuracion del header para que acompañe el tamaño de la pantalla */
@@ -69,9 +69,28 @@
  a {
      text-decoration: none;
      text-align: center;
-     color: #1985a1;
      font-family: "Oswald", sans-serif;
      letter-spacing: 0px;
+ }
+
+ /* Se modifica la clase de boostrap para cambiar color de letras de los links */
+ .navbar {
+     --bs-navbar-color: #1985a1;
+ }
+
+ /* Se utiliza para centrar los elementos del navbar */
+ .navbar-expand-lg .navbar-collapse {
+     justify-content: center;
+ }
+
+ /* Modificacion de el fondo de los elementos del navbar*/
+ .collapse {
+     background-color: #c5c3c6;
+ }
+
+ .navbar-toggler {
+     background-color: #1985a1;
+     color: black;
  }
 
  /* centrar imagenes de los banners */
@@ -104,16 +123,16 @@
 
  /* Configuracion de los elementos del footer */
  .class-footer {
-    display: grid;
-    justify-content: space-evenly;
-    align-content: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    justify-items: center;
+     display: grid;
+     justify-content: space-evenly;
+     align-content: center;
+     font-family: "Oswald", sans-serif;
+     font-size: 16px;
+     justify-items: center;
  }
 
- .fondo-footer{
-    background-color: #4c5c68;
+ .fondo-footer {
+     background-color: #4c5c68;
  }
 
  /* Mofiicacion de la fuente de los elementos "p" */
@@ -209,117 +228,38 @@
      }
  }
 
+ /* Estrategia utilizada mobile first */
  @media (min-width: 1024px) {
-     
-    .fijar {
-         position: sticky;
-         top: 0%;
-         z-index: 101;
-     }
 
-
-     /* Configuracion de la imagen del icono */
      header img {
          width: 150px;
          height: 130px;
      }
 
-
-     /* Configuracion del header para que acompañe el tamaño de la pantalla */
-     .conf-header {
-         display: flex;
-         justify-content: flex-start;
-         flex-direction: row;
-         align-items: flex-end;
-     }
-
-     /* Configuracion de la lista del header para que acompañe el tamaño de la pantalla*/
-     .conf-nav {
-         padding: 7px;
-
-     }
-
-     /* Configuracion de los elementos de la lista del navegador */
-     header div ul li {
-         margin: 3px 38px;
-     }
-
-
-     /* Logo de whatsapp para que quede fijo en la pantalla */
-     .wapp {
-         width: 70px;
-         height: 40px;
-         bottom: 36px;
-     }
-
-     /* Configuracion de todos los links */
-     a {
+     /* modifica el tamaño de la letras de los elementos del navbar */
+     .nav-link {
          font-size: 20px;
-     }
-
-     header ul li:hover{
-        font-weight: bold;
-        color: black;
-     }
-
-     /* centrar imagenes de los banners */
-     .img-center {
-         display: block;
-         margin: 0px auto;
-         height: 400px;
      }
 
      /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
      .galeria {
          display: grid;
-         grid-template-columns: repeat(4, 40vh);
-         justify-content: center;
+         grid-template-columns: repeat(3, 33vh);
+         justify-content: space-evenly;
      }
-
 
      /* Acomodar las imagenes y titulos de la galeria */
      .cuadrilla-imagenes {
          width: 100%;
-         height: 100%;
+         height: 98%;
          border: 3px black solid;
+         font-size: 32px;
+
      }
 
-     .cuadrilla-imagenes:hover{
-        transform: scale(1.1) translate(10px,10px);
-        transition: .3s ;
+     .cuadrilla-imagenes:hover {
+         transform: scale(1.1) translate(10px, 10px);
+         transition: .3s;
      }
-
-     /* Configuracion de los elementos del footer */
-     .class-footer {
-         display: grid;
-         justify-content: space-evenly;
-         align-content: center;
-         font-family: "Oswald", sans-serif;
-         font-size: 16px;
-         background-color: #4c5c68;
-     }
-
-     /* Mofiicacion de la fuente de los elementos "p" */
-     p {
-         font-size: 18px;
-         
-     }
-
-     /* Configuracion de los titulos de cada pagina */
-     .titulos {
-         font-size: 35px;
-     }
-
-     .nombre {
-         display: block;
-         font-size: 40px;
-         color: #1985A1;
-         font-family: 'Oswald', sans-serif;
-         letter-spacing: 7px;
-         text-shadow: 5px 5px 5px black;
-         transform: translate(250px, -45px);
-     }
-
-
 
  }
