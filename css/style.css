@@ -57,12 +57,7 @@
 
  /* Logo de whatsapp para que quede fijo en la pantalla */
  .wapp {
-     position: fixed;
-     width: 40px;
-     height: 25px;
-     bottom: 5px;
-     left: 5%;
-     border-radius: 100%;
+     display: none;
  }
 
  /* Configuracion de todos los links */
@@ -123,12 +118,12 @@
 
  /* Configuracion de los elementos del footer */
  .class-footer {
-     display: grid;
-     justify-content: space-evenly;
-     align-content: center;
-     font-family: "Oswald", sans-serif;
-     font-size: 16px;
-     justify-items: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+     
  }
 
  .fondo-footer {
@@ -169,6 +164,22 @@
      display: none;
  }
 
+ .fa-square-whatsapp{
+    font-size: 3rem;
+ }
+ 
+ .fa-circle-envelope{
+    font-size: 3rem;
+ }
+
+ .fa-square-instagram{
+    font-size: 3rem;
+ }
+
+ .fa-square-facebook{
+    font-size: 3rem;
+ }
+
 
 
  /* Estrategia utilizada mobile first */
@@ -191,8 +202,13 @@
      }
 
      .wapp {
+        display: block;
+         position: fixed;
          width: 55px;
          height: 40px;
+         bottom: 55px;
+         left: 5%;
+         border-radius: 100%;
      }
 
      a {
@@ -214,7 +230,6 @@
      }
 
      .class-footer {
-         display: grid;
          font-size: 15px;
      }
 
@@ -238,7 +253,7 @@
 
      /* modifica el tamaño de la letras de los elementos del navbar */
      .nav-link {
-         font-size: 20px;
+         font-size: 25px;
      }
 
      /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
@@ -258,20 +273,30 @@
      }
 
      .cuadrilla-imagenes:hover {
-         transform: scale(1.1) translate(10px, 10px);
+         transform: scale(1, 1) translate(10px, 10px);
          transition: .3s;
      }
 
      .img-center {
-        display: block;
-        margin: 0px auto;
-        height: 600px;
-    }
+         display: block;
+         margin: 0px auto;
+         height: 600px;
+     }
 
-    .titulos {
-        font-size: 80px;
+     .titulos {
+         font-size: 80px;
 
-    }
-    
+     }
+
+     p {
+         font-size: 25px;
+
+     }
+
+     .wapp {
+         width: 65px;
+         height: 55px;
+     }
+
 
  }
