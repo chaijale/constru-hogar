@@ -83,6 +83,7 @@
      background-color: #c5c3c6;
  }
 
+ /* Modificacion del menu Hamburguesa */
  .navbar-toggler {
      background-color: #1985a1;
      color: black;
@@ -164,20 +165,31 @@
      display: none;
  }
 
+/* Configuracion del icono de whatsapp */
  .fa-square-whatsapp{
-    font-size: 3rem;
- }
- 
- .fa-circle-envelope{
-    font-size: 3rem;
+    font-size: 1.5rem;
  }
 
+ /* Configuracion del icono de instagram */
  .fa-square-instagram{
-    font-size: 3rem;
+    font-size: 1.5rem;
  }
 
+ /* Configuracion del icono de facebook */
  .fa-square-facebook{
-    font-size: 3rem;
+    font-size: 1.5rem;
+ }
+
+ /* Configuracion del icono de correo */
+ .fa-envelope{
+    font-size: 1.5rem;
+ }
+
+ /* Configuracion de los elementos del footer */
+ .iconos-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
  }
 
 
@@ -296,6 +308,22 @@
      .wapp {
          width: 65px;
          height: 55px;
+     }
+
+     .fa-square-whatsapp{
+        font-size: 3rem;
+     }
+    
+     .fa-square-instagram{
+        font-size: 3rem;
+     }
+    
+     .fa-square-facebook{
+        font-size: 3rem;
+     }
+    
+     .fa-envelope{
+        font-size: 3rem;
      }
 
 
