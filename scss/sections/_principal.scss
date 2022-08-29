@@ -1,0 +1,53 @@
+main {
+  /* Logo de whatsapp para que quede fijo en la pantalla */
+  .wapp {
+    display: none;
+  }
+  /* centrar imagenes de los banners */
+  .img-center {
+    display: block;
+    margin: 0px auto;
+    height: 200px;
+    width: 100%;
+  }
+  /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
+  .galeria {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  /* Acomodar las imagenes y titulos de la galeria */
+  .cuadrilla-imagenes {
+    border-bottom: 3px black solid;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 8px;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    background-color: white;
+  }
+  /* Mofiicacion de la fuente de los elementos "p" */
+  p {
+    font-family: "Inconsolata", monoespaciado;
+    font-size: 14px;
+    text-align: center;
+  }
+  /* Configuracion de los titulos de cada pagina */
+  .titulos {
+    display: block;
+    text-align: center;
+    background-color: #4c5c68;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-shadow: 3px 2px #1985a1;
+  }
+  /* Configuracion del formulario de contacto en la pagina contacto.html */
+  .form-conf {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+}

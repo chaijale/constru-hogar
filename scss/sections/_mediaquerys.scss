@@ -1,0 +1,116 @@
+/* Estrategia utilizada mobile first */
+@media (min-width: 768px) {
+  header {
+    img {
+      width: 120px;
+      height: 100px;
+    }
+    a {
+      font-size: 50px;
+    }
+  }
+  main {
+    .wapp {
+      display: block;
+      position: fixed;
+      width: 55px;
+      height: 40px;
+      bottom: 55px;
+      left: 5%;
+      border-radius: 100%;
+    }
+    .img-center {
+      height: 400px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 50vh);
+      justify-content: space-around;
+    }
+
+    .cuadrilla-imagenes {
+      border: 3px black solid;
+    }
+
+    .titulos {
+      font-size: 25px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  footer {
+    .class-footer {
+      font-size: 30px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+/* Estrategia utilizada mobile first */
+@media (min-width: 1024px) {
+  header {
+    img {
+      width: 150px;
+      height: 130px;
+    }
+    /* modifica el tamaño de la letras de los elementos del navbar */
+    .nav-link {
+      font-size: 25px;
+    }
+  }
+  main {
+    /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 33vh);
+      justify-content: space-evenly;
+    }
+    /* Acomodar las imagenes y titulos de la galeria */
+    .cuadrilla-imagenes {
+      width: 400px;
+      height: 98%;
+      border: 3px black solid;
+      font-size: 32px;
+      &:hover {
+        transform: scale(1, 1) translate(10px, 10px);
+        transition: 0.3s;
+      }
+    }
+    .img-center {
+      display: block;
+      margin: 0px auto;
+      height: 600px;
+    }
+    .titulos {
+      font-size: 80px;
+    }
+
+    .wapp {
+      width: 65px;
+      height: 55px;
+    }
+  }
+  footer {
+    .fa-square-whatsapp {
+      font-size: 3rem;
+    }
+
+    .fa-square-instagram {
+      font-size: 3rem;
+    }
+
+    .fa-square-facebook {
+      font-size: 3rem;
+    }
+
+    .fa-envelope {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 25px;
+    }
+  }
+}

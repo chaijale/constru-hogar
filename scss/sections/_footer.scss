@@ -1,0 +1,37 @@
+footer {
+  .fondo-footer {
+    background-color: #4c5c68;
+  }
+  /* Configuracion del icono de whatsapp */
+  .fa-square-whatsapp {
+    font-size: 1.5rem;
+  }
+
+  /* Configuracion del icono de instagram */
+  .fa-square-instagram {
+    font-size: 1.5rem;
+  }
+
+  /* Configuracion del icono de facebook */
+  .fa-square-facebook {
+    font-size: 1.5rem;
+  }
+
+  /* Configuracion del icono de correo */
+  .fa-envelope {
+    font-size: 1.5rem;
+  }
+
+  /* Configuracion de los elementos del footer */
+  .iconos-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  /* Mofiicacion de la fuente de los elementos "p" */
+  p {
+    font-family: "Inconsolata", monoespaciado;
+    font-size: 14px;
+    text-align: center;
+  }
+}
