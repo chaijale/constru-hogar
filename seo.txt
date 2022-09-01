@@ -1,0 +1,16 @@
+1- Coloque etiqueta meta keywords en todos los HTML:
+index: construccion, sanitarios, griferias, pisos, vanitorys;
+sanitarios: sanitarios,inodoro,lavatorio,bidet,juego de sanitarios;
+griferias: griferias,fv,aqualaf,ducha,lavatorio,bidet;
+pisos: pisos,porcelanatos,ceramicos;
+vanitorys: vanitorys, muebles de banio, diseñor de banio;
+herramientas: herramientas,pinzas,destornillador,prensas,llaves;
+contacto: contacto,preguntas;
+
+2- Coloque etiqueta meta description en todos los HTML:
+index: CONSTRUHOGAR es una empresa familiar que te ayuda conseguir todo para tu casa;
+sanitarios: Diferentes tipos de sanitarios para tu banio;
+griferias: Gran variedad de griferias para cada ambiente de tu casa;
+pisos: Diferentes tipos de pisos para todos los diferentes ambientes de tu casa;
+vanitorys: Diferentes tipos de vanitorys para tu banio;
+herramientas: Herramientas que te ayudaran para diferentes tareas en la construccion.
