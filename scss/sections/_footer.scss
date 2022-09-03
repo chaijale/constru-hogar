@@ -1,37 +1,37 @@
 footer {
   .fondo-footer {
-    background-color: #4c5c68;
+    background-color: $fondoFooter;
+    &__iconosfooter {
+      /* Configuracion de los elementos del footer */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
   /* Configuracion del icono de whatsapp */
   .fa-square-whatsapp {
-    font-size: 1.5rem;
+    font-size: $icono;
   }
 
   /* Configuracion del icono de instagram */
   .fa-square-instagram {
-    font-size: 1.5rem;
+    font-size: $icono;
   }
 
   /* Configuracion del icono de facebook */
   .fa-square-facebook {
-    font-size: 1.5rem;
+    font-size: $icono;
   }
 
   /* Configuracion del icono de correo */
   .fa-envelope {
-    font-size: 1.5rem;
+    font-size: $icono;
   }
 
-  /* Configuracion de los elementos del footer */
-  .iconos-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
   /* Mofiicacion de la fuente de los elementos "p" */
   p {
     font-family: "Inconsolata", monoespaciado;
-    font-size: 14px;
-    text-align: center;
+    font-size: $descripcion - 2px;
+    @include fondo($fondoFooter);
   }
 }

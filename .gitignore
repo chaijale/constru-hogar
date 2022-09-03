@@ -1,3 +1,4 @@
 node_modules/
 README_SASS.txt
 css/backup.css
+*.json

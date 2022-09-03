@@ -6,7 +6,7 @@
       height: 100px;
     }
     a {
-      font-size: 50px;
+      font-size: $titulo + 30px;
     }
   }
   main {
@@ -22,29 +22,29 @@
     .img-center {
       height: 400px;
     }
+
+    /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
     .galeria {
       display: grid;
       grid-template-columns: repeat(2, 50vh);
       justify-content: space-around;
-    }
 
-    .cuadrilla-imagenes {
-      border: 3px black solid;
+      &__cuadrillasimagenes {
+        /* Acomodar las imagenes y titulos de la galeria */
+        border: 3px black solid;
+      }
     }
 
     .titulos {
-      font-size: 25px;
+      font-size: $titulo + 10px;
     }
     p {
-      font-size: 18px;
+      font-size: $descripcion + 4px;
     }
   }
   footer {
-    .class-footer {
-      font-size: 30px;
-    }
     p {
-      font-size: 18px;
+      font-size: $descripcion + 4px;
     }
   }
 }
@@ -58,7 +58,7 @@
     }
     /* modifica el tamaño de la letras de los elementos del navbar */
     .nav-link {
-      font-size: 25px;
+      font-size: $titulo + 5px
     }
   }
   main {
@@ -67,16 +67,16 @@
       display: grid;
       grid-template-columns: repeat(3, 33vh);
       justify-content: space-evenly;
-    }
-    /* Acomodar las imagenes y titulos de la galeria */
-    .cuadrilla-imagenes {
-      width: 400px;
-      height: 98%;
-      border: 3px black solid;
-      font-size: 32px;
-      &:hover {
-        transform: scale(1, 1) translate(10px, 10px);
-        transition: 0.3s;
+
+      &__cuadrillasimagenes {
+        /* Acomodar las imagenes y titulos de la galeria */
+        width: 340px;
+        height: 98%;
+        border: 3px black solid;
+        &:hover {
+          transform: scale(1, 1) translate(10px, 10px);
+          transition: 0.3s;
+        }
       }
     }
     .img-center {
@@ -85,7 +85,7 @@
       height: 600px;
     }
     .titulos {
-      font-size: 80px;
+      font-size: $titulo * 4;
     }
 
     .wapp {
@@ -95,22 +95,22 @@
   }
   footer {
     .fa-square-whatsapp {
-      font-size: 3rem;
+      font-size: $icono * 2;
     }
 
     .fa-square-instagram {
-      font-size: 3rem;
+      font-size: $icono * 2;
     }
 
     .fa-square-facebook {
-      font-size: 3rem;
+      font-size: $icono * 2;
     }
 
     .fa-envelope {
-      font-size: 3rem;
+      font-size: $icono * 2;
     }
     p {
-      font-size: 25px;
+      font-size: $descripcion * 2;
     }
   }
 }

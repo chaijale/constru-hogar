@@ -1,7 +1,7 @@
 header {
   /* Fijacion del header para que acompañe en toda la pagina */
   .fijar {
-    background-image: linear-gradient(45deg, #46494cd5 75%, #6e7277f3);
+    background-image: linear-gradient(45deg, $fondoHeader 75%, #6e7277f3);
   }
   img {
     width: 80px;

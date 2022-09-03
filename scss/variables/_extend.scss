@@ -1,0 +1,6 @@
+//Mixin
+
+@mixin fondo ($colorFondo){
+    background-color: $colorFondo;
+    text-align: center;
+}
