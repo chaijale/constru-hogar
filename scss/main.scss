@@ -7,10 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-@import './variables/paleta-proyecto';
-@import './variables/tamanos-textos';
-@import './variables/extend';
+// VARIABLES
+@import "./variables/paleta-proyecto";
+@import "./variables/tamanos-textos";
+@import "./variables/extend";
+@import "./variables/mixin";
 
+// SECCIONES
 @import "./sections/header";
 @import "./sections/principal";
 @import "./sections/footer";

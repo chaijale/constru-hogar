@@ -26,7 +26,7 @@
     /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
     .galeria {
       display: grid;
-      grid-template-columns: repeat(2, 50vh);
+      grid-template-columns: repeat(2, 35vh);
       justify-content: space-around;
 
       &__cuadrillasimagenes {
@@ -58,7 +58,7 @@
     }
     /* modifica el tamaño de la letras de los elementos del navbar */
     .nav-link {
-      font-size: $titulo + 5px
+      font-size: $titulo + 5px;
     }
   }
   main {

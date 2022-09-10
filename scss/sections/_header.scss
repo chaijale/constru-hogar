@@ -31,8 +31,7 @@ header {
   /* Configuracion de todos los links */
   a {
     text-decoration: none;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
+    @include centrartexto("Oswald");
     letter-spacing: 0px;
   }
 }

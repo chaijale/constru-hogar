@@ -1,0 +1,11 @@
+//Mixin
+
+@mixin fondo ($colorFondo){
+    background-color: $colorFondo;
+    text-align: center;
+}
+
+@mixin centrartexto ($family){
+    font-family: ($family);
+    text-align: center;
+}

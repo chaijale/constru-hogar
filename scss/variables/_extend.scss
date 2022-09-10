@@ -1,6 +1,5 @@
-//Mixin
-
-@mixin fondo ($colorFondo){
-    background-color: $colorFondo;
-    text-align: center;
+%centrar{
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }

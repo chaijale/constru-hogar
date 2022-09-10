@@ -1,5 +1,5 @@
 main {
-  .fondo-main{
+  .fondo-main {
     background-color: $fondoMain;
   }
   /* Logo de whatsapp para que quede fijo en la pantalla */
@@ -15,9 +15,7 @@ main {
   }
   /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
   .galeria {
-    display: grid;
-    align-items: center;
-    justify-items: center;
+    @extend %centrar;
 
     &__cuadrillasimagenes {
       /* Acomodar las imagenes y titulos de la galeria */
@@ -34,9 +32,8 @@ main {
 
   /* Mofiicacion de la fuente de los elementos "p" */
   p {
-    font-family: "Inconsolata", monoespaciado;
     font-size: $descripcion;
-    text-align: center;
+    @include centrartexto("Inconsolata");
   }
   /* Configuracion de los titulos de cada pagina */
   .titulos {
@@ -48,9 +45,7 @@ main {
   }
   /* Configuracion del formulario de contacto en la pagina contacto.html */
   .form-conf {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    @extend %centrar;
     justify-content: space-around;
   }
 }
