@@ -9,3 +9,15 @@
     font-family: ($family);
     text-align: center;
 }
+
+@mixin centro ($direccion){
+    display: flex;
+    align-items: center;
+    flex-direction: ($direccion);
+}
+
+@mixin titulo-img ($fondo){
+    background-color: ($fondo);
+    border: 3px solid black;
+    text-align: center;
+}

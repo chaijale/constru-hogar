@@ -7,10 +7,16 @@
   padding: 0;
   box-sizing: border-box; }
 
-main .galeria, main .form-conf {
-  display: grid;
+main .form-conf {
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+footer .fa-square-whatsapp, footer .fa-square-instagram, footer .fa-square-facebook {
+  font-size: 1.5rem;
+  color: #414141;
+  margin: 0 15px; }
 
 header {
   /* Fijacion del header para que acompañe en toda la pagina */
@@ -20,19 +26,19 @@ header {
   /* Modificacion del menu Hamburguesa */
   /* Configuracion de todos los links */ }
   header .fijar {
-    background-image: linear-gradient(45deg, #46494cd5 75%, #6e7277f3); }
+    background-image: linear-gradient(45deg, #1D3557 65%, #1d35576c); }
   header img {
     width: 80px;
     height: 60px;
     border-radius: 50%; }
   header .navbar {
-    --bs-navbar-color: #1985a1; }
+    --bs-navbar-color: #E63946; }
   header .navbar-expand-lg .navbar-collapse {
     justify-content: center; }
   header .collapse {
-    background-color: #c5c3c6; }
+    background-color: #F1FAEE; }
   header .navbar-toggler {
-    background-color: #1985a1;
+    background-color: #F1FAEE;
     color: black; }
   header a {
     text-decoration: none;
@@ -43,12 +49,18 @@ header {
 main {
   /* Logo de whatsapp para que quede fijo en la pantalla */
   /* centrar imagenes de los banners */
-  /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
+  /*GALERIA DE OFERTAS Y DESTACADOS*/
+  /*ACOMODAR LOS ELEMENTOS DE LAS CARTAS*/
   /* Mofiicacion de la fuente de los elementos "p" */
+  /*Moficacion de titulos h5*/
+  /*Moficacion de titulos h6*/
+  /*Se reinicio margenes para que no haga scroll*/
+  /*bajar imagen en carta*/
   /* Configuracion de los titulos de cada pagina */
+  /*alinear elementros galeria*/
   /* Configuracion del formulario de contacto en la pagina contacto.html */ }
   main .fondo-main {
-    background-color: #DCDCDD; }
+    background-color: #457B9D; }
   main .wapp {
     display: none; }
   main .img-center {
@@ -56,56 +68,70 @@ main {
     margin: 0px auto;
     height: 200px;
     width: 100%; }
-  main .galeria__cuadrillasimagenes {
-    /* Acomodar las imagenes y titulos de la galeria */
-    border-bottom: 3px black solid;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    margin: 8px;
-    font-size: 14px;
-    overflow: hidden;
-    background-color: white;
-    text-align: center; }
+  main .cartas {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px; }
+  main .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
   main p {
     font-size: 14px;
     font-family: "Inconsolata";
     text-align: center; }
+  main h5 {
+    background-color: yellow;
+    border: 3px solid black;
+    text-align: center;
+    padding: 4px; }
+  main h6 {
+    background-color: rgba(0, 132, 255, 0.616);
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px; }
+  main .row {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly; }
+  main .card-img-top {
+    width: 50%;
+    margin-top: 3rem; }
   main .titulos {
     display: block;
-    background-color: #4c5c68;
+    background-color: #a8dadc;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-shadow: 3px 2px #1985a1; }
+  main .card {
+    display: flex;
+    align-items: center;
+    flex-direction: columns; }
   main .form-conf {
-    justify-content: space-around; }
+    padding: 15px; }
+    main .form-conf__input {
+      margin: 10px; }
 
 footer {
   /* Configuracion del icono de whatsapp */
   /* Configuracion del icono de instagram */
   /* Configuracion del icono de facebook */
-  /* Configuracion del icono de correo */
   /* Mofiicacion de la fuente de los elementos "p" */ }
   footer .fondo-footer {
-    background-color: #4c5c68; }
+    background-color: #A8DADC; }
     footer .fondo-footer__iconosfooter {
       /* Configuracion de los elementos del footer */
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-evenly; }
-  footer .fa-square-whatsapp {
-    font-size: 1.5rem; }
-  footer .fa-square-instagram {
-    font-size: 1.5rem; }
-  footer .fa-square-facebook {
-    font-size: 1.5rem; }
-  footer .fa-envelope {
-    font-size: 1.5rem; }
+      justify-content: center; }
   footer p {
     font-family: "Inconsolata", monoespaciado;
     font-size: 12px;
-    background-color: #4c5c68;
+    background-color: #A8DADC;
     text-align: center; }
 
 /* Estrategia utilizada mobile first */
@@ -151,28 +177,34 @@ footer {
     header .nav-link {
       font-size: 25px; }
   main {
-    /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */ }
-    main .galeria {
-      display: grid;
-      grid-template-columns: repeat(3, 33vh);
-      justify-content: space-evenly; }
-      main .galeria__cuadrillasimagenes {
-        /* Acomodar las imagenes y titulos de la galeria */
-        width: 340px;
-        height: 98%;
-        border: 3px black solid; }
-        main .galeria__cuadrillasimagenes:hover {
-          transform: scale(1, 1) translate(10px, 10px);
-          transition: 0.3s; }
+    /*ALINEAR TEXTOS CON IMAGENES*/
+    /*BORDES*/ }
+    main .card-body {
+      margin-top: 20%; }
+    main .card {
+      --bs-card-border-width: 3px;
+      --bs-card-border-color: #141619; }
+      main .card:hover {
+        transform: scale(1, 1) translate(0px, -10px);
+        transition: 0.3s;
+        z-index: 101; }
     main .img-center {
       display: block;
       margin: 0px auto;
-      height: 600px; }
+      height: 800px;
+      width: 100%; }
     main .titulos {
       font-size: 80px; }
     main .wapp {
       width: 65px;
-      height: 55px; }
+      height: 55px;
+      z-index: 102; }
+  /*Moficacion de titulos h5*/
+  h5 {
+    font-size: 1.5rem; }
+  /*Moficacion de titulos h6*/
+  h6 {
+    font-size: 1.5rem; }
   footer .fa-square-whatsapp {
     font-size: 3rem; }
   footer .fa-square-instagram {

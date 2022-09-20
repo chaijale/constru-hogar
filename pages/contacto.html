@@ -57,6 +57,8 @@
         </nav>
     </header>
     <main>
+        <!-- Banner -->
+        <img src="../images/banner-contacto.jpg" alt="sanitarios" class="img-center">
         <h1 class="titulos">Contacto</h1><br>
         <!-- RUTA DE EXPLORACION -->
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -66,20 +68,36 @@
             </ol>
         </nav>
         <!-- Formulario de contacto -->
-        <div class="container-fluid form-conf fondo-main">
-            <form>
-                <input type="text" placeholder="Nombre y Apellido" required><br><br>
-                <input type="number" placeholder="Numero de contacto" required><br><br>
-                <input type="email" placeholder="Email" required><br><br>
-                <textarea name="" id="" cols="40" rows="10" placeholder="Escribenos tus consulta"></textarea><br><br>
-                <span>¿Desea subscribirse a newlestter?</span>
-                <input type="checkbox" name="aceptar" id="si"><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+        <form>
+            <div class="contariner-fluid row fondo-main form-conf">
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <input type="number" class="form-control" placeholder="Telefono de contacto" required>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <input type="text" class="form-control" placeholder="Apellido" required>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <input type="email" class" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <textarea name="" id="" cols="40" rows="10" placeholder="Escribenos tus consulta"></textarea>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <span>¿Desea subscribirse a newlestter?</span>
+                    <input type="checkbox" name="aceptar" id="si" required>
+                </div>
+                <div class="col-xs-12 col-xl-4 col-md-6 form-conf__input">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
         <!-- Logo de whatsapp -->
         <div>
-            <img src="../images/logo-whatsapp.jpg" alt="whatsapp" class="wapp">
+            <a href="https://wa.me/3584371991?text=Decinos%20en%20que%20podemos%20ayudarte%20?" target="_blank"><img
+                    src="../images/logo-whatsapp.jpg" alt="whatsapp" class="wapp"></a>
         </div>
     </main>
     <footer>
@@ -87,10 +105,12 @@
         <div class="fondo-footer">
             <p> Seguinos y contactanos </p>
             <div class="fondo-footer__iconosfooter">
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-whatsapp"></i>
-                <i class="fa-solid fa-envelope"></i>
+                <a href="https://www.instagram.com/constru.hogar/" target="_blank"><i
+                        class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/construhogar-103637497719456/" target="_blank"><i
+                        class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://wa.me/3584371991?text=Decinos%20en%20que%20podemos%20ayudarte%20?" target="_blank"><i
+                        class="fa-brands fa-square-whatsapp"></i></a>
             </div>
         </div>
     </footer>

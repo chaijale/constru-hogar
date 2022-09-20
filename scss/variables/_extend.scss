@@ -1,5 +1,12 @@
 %centrar{
-    display: grid;
     align-items: center;
     justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+%iconos{
+    font-size: $icono;
+    color: rgb(65, 65, 65);
+    margin: 0 15px;
 }

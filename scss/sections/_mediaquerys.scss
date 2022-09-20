@@ -62,27 +62,27 @@
     }
   }
   main {
-    /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
-    .galeria {
-      display: grid;
-      grid-template-columns: repeat(3, 33vh);
-      justify-content: space-evenly;
+    /*ALINEAR TEXTOS CON IMAGENES*/
+    .card-body {
+      margin-top: 20%;
+    }
 
-      &__cuadrillasimagenes {
-        /* Acomodar las imagenes y titulos de la galeria */
-        width: 340px;
-        height: 98%;
-        border: 3px black solid;
-        &:hover {
-          transform: scale(1, 1) translate(10px, 10px);
-          transition: 0.3s;
-        }
+    /*BORDES*/
+    .card {
+      --bs-card-border-width: 3px;
+      --bs-card-border-color: #141619;
+      &:hover {
+        transform: scale(1, 1) translate(0px, -10px);
+        transition: 0.3s;
+        z-index: 101;
       }
     }
+
     .img-center {
       display: block;
       margin: 0px auto;
-      height: 600px;
+      height: 800px;
+      width: 100%;
     }
     .titulos {
       font-size: $titulo * 4;
@@ -91,7 +91,18 @@
     .wapp {
       width: 65px;
       height: 55px;
+      z-index: 102;
     }
+  }
+
+  /*Moficacion de titulos h5*/
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  /*Moficacion de titulos h6*/
+  h6 {
+    font-size: 1.5rem;
   }
   footer {
     .fa-square-whatsapp {
@@ -112,5 +123,6 @@
     p {
       font-size: $descripcion * 2;
     }
+
   }
 }

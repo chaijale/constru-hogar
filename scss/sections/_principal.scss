@@ -13,39 +13,67 @@ main {
     height: 200px;
     width: 100%;
   }
-  /* Armar galeria de imagenes y que se ajusten al tamaño de la pantalla */
-  .galeria {
-    @extend %centrar;
 
-    &__cuadrillasimagenes {
-      /* Acomodar las imagenes y titulos de la galeria */
-      border-bottom: 3px black solid;
-      display: inline-block;
-      width: 100%;
-      height: 100%;
-      margin: 8px;
-      font-size: $descripcion;
-      overflow: hidden;
-      @include fondo(white);
-    }
+  /*GALERIA DE OFERTAS Y DESTACADOS*/
+  .cartas {
+    @include centro(row);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
   }
 
+  /*ACOMODAR LOS ELEMENTOS DE LAS CARTAS*/
+  .card-body {
+    @include centro(column);
+  }
   /* Mofiicacion de la fuente de los elementos "p" */
   p {
     font-size: $descripcion;
     @include centrartexto("Inconsolata");
   }
+
+  /*Moficacion de titulos h5*/
+  h5 {
+    @include titulo-img(yellow);
+    padding: 4px;
+  }
+
+  /*Moficacion de titulos h6*/
+  h6 {
+    @include titulo-img(rgba(0, 132, 255, 0.616));
+    padding: 5px;
+  }
+  /*Se reinicio margenes para que no haga scroll*/
+  .row {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  /*bajar imagen en carta*/
+  .card-img-top {
+    width: 50%;
+    margin-top: 3rem;
+  }
   /* Configuracion de los titulos de cada pagina */
   .titulos {
     display: block;
-    @include fondo(#4c5c68);
+    @include fondo(#a8dadc);
     font-family: "Oswald", sans-serif;
     font-size: $titulo;
     text-shadow: 3px 2px $sombras;
   }
+
+  /*alinear elementros galeria*/
+  .card {
+    @include centro(columns);
+  }
   /* Configuracion del formulario de contacto en la pagina contacto.html */
   .form-conf {
     @extend %centrar;
-    justify-content: space-around;
+    padding: 15px;
+    &__input {
+      margin: 10px;
+    }
   }
 }
